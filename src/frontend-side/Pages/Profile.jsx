@@ -373,7 +373,7 @@ const Profile = () => {
                     <div id="menu1">
                       <div className="contactFormD">
                         <form className="" onSubmit={onSubmitPassword}>
-                          {passwordSuccessMessage && (
+                          {false && (
                             <div className="alert alert-success Add">
                               <strong>Password changed Successfully!</strong>
                             </div>
