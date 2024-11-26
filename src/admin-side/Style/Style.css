@@ -1,0 +1,611 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: "Rubik", sans-serif;
+}
+
+/*************************************** common style start ********************************************/
+.btn_facebook {
+  color: #fff;
+  background: #3b5998;
+}
+
+.btn_twitter {
+  color: #fff;
+  background: #00aced;
+}
+
+.btn_google {
+  color: #fff;
+  background: #db3236;
+  margin-top: 10px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.bordrht {
+  border-right: 1px solid #ccc;
+}
+.padleftright0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.padright0 {
+  padding-right: 0;
+}
+.padleft0 {
+  padding-left: 0;
+}
+
+/*************************************** general style start ********************************************/
+.header-nav {
+  padding: 15px 0;
+  background: #fff;
+}
+.borderClass {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+.sitemaphUl {
+  float: right;
+}
+
+.sitemapH ul li {
+  float: left;
+  margin: 0 2px;
+}
+
+.sitemapH ul li a {
+  padding: 10px 12px;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #1e1e1e;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+.btn_gradiant {
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 40px;
+  background: #f33984;
+  background-image: linear-gradient(90deg, #f33984 0%, #5244f8 100%);
+  font-size: 16px;
+  height: 45px;
+  width: 130px;
+}
+.btn_gradiant:hover {
+  color: #fff;
+}
+
+.slider-Sec {
+  padding: 40px 0;
+}
+.slideHead {
+  /*    max-width: 500px;*/
+  margin-bottom: 25px;
+}
+.slideHead h2 {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 56px;
+  text-align: left;
+  color: #1e1e1e;
+  margin: 0;
+}
+.slideHead p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1e1e1e;
+  margin-top: 20px;
+}
+
+.adSlider {
+  margin: 30px 0;
+  border: 1px solid #747c9033;
+  padding: 10px;
+  border-radius: 4px;
+}
+.adSlider .item img {
+  width: 100%;
+  height: 220px;
+  border-radius: 4px;
+}
+.adSlider .carousel-indicators li {
+  width: 20px;
+  height: 4px;
+  border: none;
+  background-color: #f339844f;
+  border-radius: 10px;
+  margin: 0;
+}
+.adSlider .carousel-indicators li.active {
+  width: 20px;
+  height: 4px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f33984f5;
+}
+.adSlider .carousel-indicators {
+  bottom: 0px;
+}
+
+.projrctMain-Sec {
+  padding-bottom: 30px;
+}
+.searchProject input {
+  height: 55px;
+  background: #efeeee;
+  border-radius: 16px;
+  color: #a2a3a4;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding-left: 20px;
+}
+.searchProject input.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.searchProject .btn-default {
+  height: 55px;
+  background: #efeeee;
+  border-radius: 16px;
+  color: #a2a3a4;
+  font-size: 18px;
+  border: none;
+  padding-right: 20px;
+}
+
+.btn_gradiant_brdr {
+  /*    border: 1px solid #F33984;*/
+  background: #fff;
+  color: #1e1e1e;
+  padding: 12px 25px;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  height: 45px;
+  width: 150px;
+}
+.btn_gradiant_brdr:hover,
+.btn_gradiant_brdr:focus,
+.btn_gradiant_brdr:active {
+  box-shadow: none;
+  outline: none;
+}
+.btnbrdrGrad {
+  display: inline-block;
+  background-image: linear-gradient(90deg, #f33984 0%, #5244f8 100%);
+  padding: 1px;
+  border-radius: 40px;
+}
+.projectFilter-btnD span {
+  margin-left: 15px;
+}
+
+hr {
+  border-top: 1px solid #e3e3e3;
+}
+
+/* The checkstyle */
+.checkstyle {
+  display: block;
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 400;
+  color: #1e1e1e;
+}
+
+/* Hide the browser's default checkbox */
+.checkstyle input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #949494;
+}
+
+/* On mouse-over, add a grey background color */
+.checkstyle:hover input ~ .checkmark {
+  background-color: #f33984;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkstyle input:checked ~ .checkmark {
+  background-color: #f33984;
+  border: 1px solid #f33984;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  /* display: none; */
+}
+
+/* Show the checkmark when checked */
+/* .checkstyle input:checked ~ .checkmark:after {
+  display: block;
+} */
+
+/* Style the checkmark/indicator */
+.checkstyle .checkmark:after {
+  left: 4px;
+  top: 4px;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+}
+.filterSubD h4 {
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.filtermegamenuD {
+  background: #efeeee;
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.projectTableD {
+  margin-top: 15px;
+  background: #fcfcfc;
+}
+.projectTableD table tr {
+  color: #1e1e1e;
+  font-size: 15px;
+}
+.projectTableD table tr td .btnbrdrGrad {
+  margin: 0 2px;
+}
+.projectTableD table tr td {
+  color: #1e1e1e;
+  font-size: 14px;
+  vertical-align: middle;
+  padding: 14px 8px;
+}
+.projectTableD table tr th {
+  vertical-align: middle;
+  padding: 14px 8px;
+}
+
+.btn_keyword {
+  /*    border: 1px solid #F33984;*/
+  background: #fcfcfc;
+  color: #1e1e1e;
+  padding: 2px 10px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 11px;
+}
+.proTitle {
+  font-weight: 500;
+  font-size: 15px;
+}
+.counD {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.highlightStar {
+  color: #ff7d02;
+}
+
+.sid {
+  font-size: 20px !important;
+  color: #f33984;
+  background: -webkit-linear-gradient(0deg, #f33984 0%, #5244f8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.roadmap-Sec {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.secHeading h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  text-align: center;
+  color: #191a15;
+}
+.roadmapD {
+  background: url(./../Images/roadmap.png) top center no-repeat;
+  background-size: cover;
+  height: 423px;
+  margin-top: 50px;
+}
+.subroadampD {
+  position: relative;
+  height: 200px;
+  padding: 10px;
+  /*    margin: 15px 0;*/
+}
+.subCrourm {
+  position: absolute;
+  text-align: center;
+  bottom: 5px;
+  left: -10px;
+  right: 0;
+  width: 100%;
+  color: #3a4650;
+  font-weight: 500;
+  font-size: 16px;
+}
+.subCrourm2 {
+  position: absolute;
+  top: 30px;
+  left: 49%;
+  /*    right: 0;*/
+  /*    width: 100%;*/
+  color: #3a4650;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.subroadampD h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f33984;
+  background: -webkit-linear-gradient(0deg, #f33984 0%, #5244f8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.subroadampD p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #415162;
+}
+.subRMpl {
+  padding-left: 50px;
+  padding-top: 65px;
+}
+.heightAuto {
+  height: auto;
+}
+.lastLeft {
+  left: 29%;
+}
+
+.homeabout-Sec {
+  padding: 30px 0;
+  padding-bottom: 80px;
+}
+.abtd {
+  margin-top: 30px;
+}
+.abtd p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #191a15;
+}
+
+.teamSecD {
+  margin: 15px 0;
+  padding: 30px;
+}
+.teamSecD img {
+  height: 140px;
+  border-radius: 15px;
+}
+.teamSecD h4 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #1e1e1e;
+}
+.teamSecD p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(30, 30, 30, 0.6);
+}
+.teamSecD span a {
+  font-size: 20px;
+  color: rgba(30, 30, 30, 0.6);
+  margin: 6px 10px;
+}
+.clientSecD .item {
+  padding: 20px;
+}
+.clientSecD .item img {
+  height: 35px;
+  width: auto !important;
+}
+.abtd p.text-big {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer-Sec {
+  padding: 30px 0;
+  padding-top: 60px;
+}
+
+.footSubD img {
+  height: 40px;
+}
+.footSubD h4 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #1e1e1e;
+}
+.footSubD ul li a {
+  padding: 6px 0;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #1e1e1e;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+.footSubD p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #1e1e1e;
+  margin-top: 20px;
+}
+
+/**********************Search***********************/
+.em_quote_form {
+  position: relative;
+  margin-top: 15px;
+}
+.quite_form_field input {
+  width: 100%;
+  height: 55px;
+  border: 1px solid #ccc;
+  padding-left: 25px;
+  color: #333;
+  outline: none;
+  border-radius: 40px;
+}
+
+.quote_button {
+  height: 40px;
+  width: auto;
+  padding: 0px 13px;
+  border: 0;
+  background-color: #ff211b;
+  background-image: linear-gradient(90deg, #f33984 0%, #5244f8 100%);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: absolute;
+  font-size: 17px;
+  right: 8px;
+  top: 8px;
+  letter-spacing: 1px;
+  border-radius: 40px;
+}
+
+.lastfooter-Sec {
+  padding: 10px 0;
+}
+.lastfooter-Sec p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1e1e1e;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/* from another style */
+
+.popup {
+  /* display: block; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  color: #333;
+}
+
+.popup-content p {
+  color: #666;
+}
+
+button {
+  /* background-color: #d9534f;
+  color: #333; */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #957777;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+.calender {
+  background-color: #fff;
+}
